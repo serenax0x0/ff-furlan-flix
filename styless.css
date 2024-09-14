@@ -1,0 +1,293 @@
+/* Resetando margens e preenchimento */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #66ccff; /* Azul claro */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo da seção Hero */
+.hero {
+    background-color: #ddd;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da seção Galeria */
+.galeria {
+    padding: 20px;
+    background-color: #003163; /* Cor de fundo cinza claro para destacar a galeria */
+}
+
+.galeria h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Azul escuro para o título */
+}
+
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaçamento entre as imagens */
+    justify-content: center;
+}
+
+.galeria-grid img {
+    width: 150px; /* Largura ajustada para as imagens */
+    height: 150px; /* Altura ajustada para manter as imagens quadradas */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    border-radius: 8px; /* Cantos arredondados, opcional */
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo da seção Sobre Nós */
+.sobre {
+    background: linear-gradient(to bottom, #003366, #66ccff); /* Gradiente azul escuro para claro */
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.sobre .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre img {
+    width: 90%; /* Ajusta a imagem para a largura do container */
+    max-width: 800px; /* Largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados, opcional */
+}
+
+/* Estilo dos planos */
+.planos {
+    padding: 40px 20px;
+    background-color: #f4f4f425; /* Cor de fundo cinza muito claro para destacar os planos */
+    text-align: center;
+}
+
+.planos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Alinha todos os planos ao centro */
+}
+
+.plano {
+    background-color: #426eff; /* Branco para o fundo dos planos */
+    border: 1px solid #000000; /* Borda cinza clara */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Faz com que os planos ocupem 100% da largura em telas pequenas */
+    max-width: 500px; /* Largura máxima dos planos */
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento entre os planos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+}
+
+.plano h3 {
+    margin-top: 0;
+    color: #003366; /* Azul escuro para o título dos planos */
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Azul claro para os preços */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da seção Contato */
+.contato {
+    padding: 20px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #003366; /* Azul escuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para a seção de depoimentos */
+.depoimentos {
+    padding: 2rem 0;
+    background-color: #000000;
+}
+
+.depoimentos .card {
+    margin-bottom: 1rem;
+}
+
+/* Estilo para a seção de FAQ */
+.faq {
+    padding: 2rem 0;
+    background-color: #352121;
+}
+
+.accordion-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0056b3;
+}
+
+/* Estilo para a seção de blog */
+.blog {
+    padding: 2rem 0;
+    background-color: #000000;
+}
+
+.blog .card {
+    margin-bottom: 1rem;
+}
+
+.blog .card-img-top {
+    width: 150px; /* Largura ajustada para manter as imagens pequenas */
+    height: 150px; /* Altura ajustada para manter as imagens quadradas */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    border-radius: 8px; /* Cantos arredondados, opcional */
+}
+
+/* Estilo para a seção de eventos */
+.eventos {
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+}
+
+.eventos .card-img-top {
+    width: 150px; /* Largura ajustada para manter as imagens pequenas */
+    height: 150px; /* Altura ajustada para manter as imagens quadradas */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    border-radius: 8px; /* Cantos arredondados, opcional */
+}
+
+/* Estilo para a seção de redes sociais */
+.redes-sociais {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a seção de inscrição na newsletter */
+.newsletter {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.newsletter form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group {
+    max-width: 100%;
+}
+
+/* Estilo para a seção de parcerias */
+.parceiros {
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.parceiros img {
+    max-width: 80%; /* Largura máxima para as imagens dos parceiros */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px 0; /* Espaçamento entre as imagens */
+}

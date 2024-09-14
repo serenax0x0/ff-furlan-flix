@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultoLovers plus</title>
+    <link rel="stylesheet" href="styless.css">
+    <!-- Incluindo o CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluindo a fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Usando a fonte Roboto */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Adicionando efeitos especiais para os botões */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .btn-primary:active {
+            background-color: #004080;
+            transform: scale(0.95);
+        }
+
+        .plano {
+            padding: 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+        }
+
+        .plano:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 400px;
+        }
+
+        .accordion-button::after {
+            filter: invert(1);
+        }
+
+        /* Estilo da galeria */
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria-item {
+            text-align: center;
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .galeria-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>FFFURLAN FLIX</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao FF FURLAN FLIX!</h2>
+            <p>site de filmes que acabaram de sair no cinema:</p>
+            <a href="#planos" class="btn-primary">Assine Agora</a>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Galeria de Filmes</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <a href="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/89/63/19962658.jpg" target="_blank">
+                        <img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/89/63/19962658.jpg" alt="Tá Chovendo Hambúrguer 2017">
+                    </a>
+                    <p>Flint Lockwood (Bill Hader) é um jovem cientista que sonha criar algo que faça com que seja reconhecido pela população de Boca Grande, uma pequena ilha no Atlântico. Um dia ele consegue descobrir uma forma de transformar água em comida, só que precisa de bastante eletricidade para colocá-la em funcionamento.</p>
+                </div>
+                <div class="galeria-item">
+                    <a href="https://br.web.img3.acsta.net/c_310_420/pictures/21/04/14/19/06/3385237.jpg" target="_blank">
+                        <img src="https://br.web.img3.acsta.net/c_310_420/pictures/21/04/14/19/06/3385237.jpg" alt="Todos Velozes e Furiosos">
+                    </a>
+                    <p>Brian O'Conner é um policial que se infiltra no submundo dos rachas de rua para investigar uma série de furtos. Enquanto tenta ganhar o respeito e a confiança do líder Dom Toretto, ele corre o risco de ser desmascarado.</p>
+                </div>
+                <div class="galeria-item">
+                    <a href="https://upload.wikimedia.org/wikipedia/pt/d/d6/Grown_Ups.jpg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d6/Grown_Ups.jpg" alt="Gente Grande 2">
+                    </a>
+                    <p>Lenny Feder e a família se mudam para a própria cidade natal com o objetivo ficarem perto dos amigos, mas acabam tendo que enfrentar alguns fantasmas do passado, como a covardia diante de valentões e o famigerado bullying na escola.</p>
+                </div>
+                <div class="galeria-item">
+                    <a href="https://play-lh.googleusercontent.com/e_G3i4V2UnvjrNK-E7HGJADldCEIFn0BvU5hM5-kD-gg78mggtTJr9HyDrRmVZMKDGuT" target="_blank">
+                        <img src="https://play-lh.googleusercontent.com/e_G3i4V2UnvjrNK-E7HGJADldCEIFn0BvU5hM5-kD-gg78mggtTJr9HyDrRmVZMKDGuT" alt="Querido John">
+                    </a>
+                    <p>O soldado John Tyree conhece a universitária idealista Savannah Curtis e uma forte ligação nasce entre eles. Durante sete anos de um tumultuado romance, o casal se encontra apenas esporadicamente e mantém contato por meio de cartas de amor. No entanto, a correspondência entre o casal desencadeia consequências imprevisíveis.</p>
+                </div>
+                <div class="galeria-item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Be9XuMa7Y_C8QBRKmp8Q70XcYLtbE0wg3w&s" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Be9XuMa7Y_C8QBRKmp8Q70XcYLtbE0wg3w&s" alt="Sonic 2">
+                    </a>
+                    <p>O Dr. Robotnik retorna à procura de uma esmeralda mística que tem o poder de destruir civilizações. Para detê-lo, Sonic se une a seu antigo parceiro, Tails, e parte em uma jornada para encontrar a joia antes que ela caia em mãos erradas.</p>
+                </div>
+                <div class="galeria-item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HKnA_NFbsQwrJY9HhpDe9rTOX-kQJLCHkQ&s" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HKnA_NFbsQwrJY9HhpDe9rTOX-kQJLCHkQ&s" alt="O Lobo de Wall Street">
+                    </a>
+                    <p>A história de Jordan Belfort, um corretor de ações de Wall Street que sobe ao topo da pirâmide financeira e leva uma vida de excessos e corrupção. O filme mostra suas práticas ilegais e a eventual queda que resulta de seu estilo de vida indulgente.</p>
+                </div>
+                <div class="galeria-item">
+                    <a href="https://upload.wikimedia.org/wikipedia/pt/2/28/Skyscraper_%282018%29.jpg" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/2/28/Skyscraper_%282018%29.jpg" alt="Arranha-Céu">
+                    </a>
+                    <p>Will Sawyer, veterano de guerra norte-americano e ex-líder de operações de resgate do FBI, trabalha avaliando a segurança de arranha-céus. Na China, ele é acusado de ter colocado o edifício mais alto e seguro de Hong Kong em chamas. Agora, o ex-agente precisa encontrar os culpados pelo incêndio, salvar sua família que está presa dentro do prédio e limpar seu nome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" class="planos">
+        <div class="container">
+            <h2>Planos e Preços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="plano">
+                        <h3>Plano Básico</h3>
+                        <p>Acesso a filmes e séries com qualidade padrão.</p>
+                        <p><strong>R$ 19,99 / mês</strong></p>
+                        <a href="#" class="btn-primary">Assine Agora</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plano">
+                        <h3>Plano Standard</h3>
+                        <p>Acesso a filmes e séries em HD e a conteúdo exclusivo.</p>
+                        <p><strong>R$ 29,99 / mês</strong></p>
+                        <a href="#" class="btn-primary">Assine Agora</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plano">
+                        <h3>Plano Premium</h3>
+                        <p>Acesso ilimitado a todo o conteúdo em 4K e recursos adicionais.</p>
+                        <p><strong>R$ 49,99 / mês</strong></p>
+                        <a href="#" class="btn-primary">Assine Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="enviar.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Como faço para cancelar minha assinatura?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Para cancelar sua assinatura, acesse sua conta e clique na opção "Cancelar Assinatura". Siga as instruções para completar o processo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Posso assistir em vários dispositivos simultaneamente?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sim, você pode assistir em vários dispositivos simultaneamente, dependendo do plano que você escolher. Verifique os detalhes do seu plano para mais informações.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Como posso atualizar meus dados de pagamento?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Para atualizar seus dados de pagamento, acesse sua conta e clique em "Método de Pagamento". Insira as novas informações e salve as alterações.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incluindo o JS do Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
